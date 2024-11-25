@@ -1,0 +1,12 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black; /* Adds border around table cells */
+    padding: 8px;  /* Adds space around the content inside the cells */
+    text-align: left; /* Aligns text to the left in cells */
+}
+th {
+    background-color: #f2f2f2; /* Light gray background for header cells */
+}

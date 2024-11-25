@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+    <title>users</title>
+</head>
+<body>
+<h1>Users</h1>
+
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Bio</th>
+        <th>Location</th>
+    </tr>
+    <tr th:each="userResponseDTO : ${userResponseDTOS}">
+        <!--Display username-->
+        <td th:text="${userResponseDTO.username()}"/>
+        <!--Write your code to display bio-->
+        <td th:text="${userResponseDTO.profileResponseDTO().bio()}"></td>
+        <!--Write your code to display location-->
+        <td th:text="${userResponseDTO.profileResponseDTO().location()}"></td>
+    </tr>
+</table>
+</body>
+</html>
