@@ -1,4 +1,4 @@
-package edu.miu.cse.vsms.model;
+package edu.miu.id615881.cs489.nov2024.finalexam.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

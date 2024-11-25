@@ -1,7 +1,7 @@
-package edu.miu.cse.vsms.service;
+package edu.miu.id615881.cs489.nov2024.finalexam.service;
 
-import edu.miu.cse.vsms.dto.request.EmployeeRequestDto;
-import edu.miu.cse.vsms.dto.response.EmployeeResponseDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.request.EmployeeRequestDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.response.EmployeeResponseDto;
 
 import java.util.List;
 import java.util.Map;

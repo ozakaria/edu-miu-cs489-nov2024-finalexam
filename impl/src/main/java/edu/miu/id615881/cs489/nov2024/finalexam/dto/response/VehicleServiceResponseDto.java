@@ -1,4 +1,4 @@
-package edu.miu.cse.vsms.dto.response;
+package edu.miu.id615881.cs489.nov2024.finalexam.dto.response;
 
 public record VehicleServiceResponseDto(
         Long id,

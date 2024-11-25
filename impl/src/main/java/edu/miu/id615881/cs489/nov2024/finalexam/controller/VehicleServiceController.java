@@ -1,9 +1,10 @@
-package edu.miu.cse.vsms.controller;
+package edu.miu.id615881.cs489.nov2024.finalexam.controller;
 
-import edu.miu.cse.vsms.dto.request.ServiceRequestDto;
-import edu.miu.cse.vsms.dto.response.VehicleServiceResponseDto;
-import edu.miu.cse.vsms.service.VehicleService;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.request.ServiceRequestDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.response.VehicleServiceResponseDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.service.VehicleService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,9 @@ public class VehicleServiceController {
     public ResponseEntity<VehicleServiceResponseDto> assignService(@RequestBody ServiceRequestDto request) {
         // Write your code here
 
-        return null;
+        VehicleServiceResponseDto vehicleServiceResponseDto = vehicleService.assignService(request);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(vehicleServiceResponseDto);
     }
     
 }

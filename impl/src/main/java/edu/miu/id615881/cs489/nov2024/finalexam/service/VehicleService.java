@@ -1,7 +1,7 @@
-package edu.miu.cse.vsms.service;
+package edu.miu.id615881.cs489.nov2024.finalexam.service;
 
-import edu.miu.cse.vsms.dto.request.ServiceRequestDto;
-import edu.miu.cse.vsms.dto.response.VehicleServiceResponseDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.request.ServiceRequestDto;
+import edu.miu.id615881.cs489.nov2024.finalexam.dto.response.VehicleServiceResponseDto;
 
 public interface VehicleService {
     VehicleServiceResponseDto assignService(ServiceRequestDto request);
